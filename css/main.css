@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap');
+
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	font-family: Arial , sans-serif;
+	font-family: "DM Sans", sans-serif;
 }
+
 :root{
 	--brand: #1261b5;
 	--bg: #f5f5f5;
@@ -35,8 +38,8 @@ body{
 }
 .logo a{
 	color: var(--brand);
-	font-size: 40px;
-	font-family: Poppins, sans-serif;
+	font-size: 26px;
+	font-family: inherit;
 	float: left;
 	text-decoration: none;
 }
@@ -76,7 +79,7 @@ body{
 	margin-top: 5px;
 } 
 .nav-bar a{
-	font-family: Arial;
+	font-family: inherit;
 	font-size: 20px;
 	color: black;
 	text-decoration: none;
@@ -87,7 +90,7 @@ body{
 	position: relative;
 }
 .product .btn-product {
-	font-family: Arial;
+	font-family: inherit;
 	font-size: 20px;
 	border: none;
 	outline: none;
@@ -242,8 +245,6 @@ body{
 }
 .section2{
 	max-width: 100%;
-/*	height: 490px;*/
-/*	flex-wrap: wrap;*/
 	margin: auto;
 	padding: 40px 20px;
 	margin-top: 30px;
@@ -260,8 +261,6 @@ body{
 .section2 .body-img2 img{
 	width: 100%;
 	height: 380px;
-/*	margin: 20px;
-	margin-left: 75px;*/
 	border: none;
 	object-fit: cover;
 	border-radius: 12px;
@@ -299,7 +298,6 @@ body{
 }
 .link{
 	margin-top: 20px;
-	/* border: 1px solid #333; */
 }
 .link a{
 	color: var(--brand);
@@ -314,7 +312,7 @@ body{
 }
 .section3 h2{
 	font-size: 32px;
-	font-family: tahoma;
+	font-family: inherit;
 	margin-bottom: 28px;
 	color: var(--brand);
 	text-transform: none;
@@ -387,14 +385,13 @@ body{
 .section4 h2{
 	margin-bottom: 28px;
 	font-size: 32px;
-	font-family: tahoma;
+	font-family: inherit;
 	color: var(--brand);
 	text-transform: none;
 	letter-spacing: 0.5px;
 }
 .promotions{
 	display: grid;
-/*	height: 600px;*/	
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
 	border-radius: 8px;
@@ -411,7 +408,7 @@ body{
 .promotions-desks h3{
 	font-size: 22px;
 	margin-bottom: 10px;
-	font-family: tahoma;
+	font-family: inherit;
 }
 .promotions-desks p{
 	font-size: 15px;
@@ -461,7 +458,7 @@ body{
 .video-section h2{
 	text-align: center;
 	font-size: 32px;
-	font-family: tahoma;
+	font-family: inherit;
 	text-transform: none;
 	color: var(--brand);
 	margin: 0 auto 24px;
@@ -494,7 +491,7 @@ body{
 	color: var(--brand);
 	margin-top:40px;
 	margin-bottom: 25px;
-	font-family: tahoma;
+	font-family: inherit;
 }
 .end-text p{
 	max-width: 800px;
@@ -502,7 +499,7 @@ body{
 	font-size: 18px;
 	margin: 0 auto;
 	line-height: 1.5;
-	font-family: tahoma, sans-serif;
+	font-family: inherit;
 }
 /*																										Body End																	*/
 /*																							 	 Contact Us Page Start												*/
@@ -727,61 +724,207 @@ textarea {
 }
 /*																									Rising Desk Page End																*/
 /*																									Health Benefits Page Start 													*/
-.healthbenefits-header h1, .health-benefits h2 {
-	font-family: tahoma, sans-serif;
-	margin-top: 45px;
-	text-transform: none;
-	letter-spacing: 0.5px;
+.hb-page{
+	font-family: "DM Sans", sans-serif;
 }
-.health-benefits img{
-	width: 300px;
-	height: 200px;
-	border-radius: 5px;
+.hb-page h1, .hb-page h2, .hb-page h3{
+	font-family: "Playfair Display", serif;
+	letter-spacing: 0.3px;
 }
-.healthbenefits-header{
-	text-align: center;
-	padding: 50px;
+.hb-page{
+	--hb-ink: #0f1a2b;
+	--hb-warm: #f5d37d;
+	--hb-soft: #edf2fb;
+	--hb-ice: #f7f9ff;
+	--hb-shadow: 0 18px 30px rgba(12, 20, 39, 0.12);
 }
-.healthbenefits-header h1{
-	font-size: 32px;
-	margin-bottom: 16px;
-	color: var(--brand);
-}
-.healthbenefits-header p{
-	font-size: 20px;
-	color: #1261b5;
-}
-.health-benefits{
-	padding: 50px;
-}
-.hb-items{
-	display: flex;
-	background-color: #dddeee;
-	padding: 20px;
+.hb-hero{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 28px;
 	align-items: center;
-	margin-bottom: 50px;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 30px 24px 10px;
+	margin: 0 10px 20px;
+	background: linear-gradient(120deg, #ffffff 0%, #f1f6ff 60%, #eaf0ff 100%);
+	border-radius: 18px;
+	border: 1px solid rgba(18, 97, 181, 0.08);
+	position: relative;
+	overflow: hidden;
 }
-.hb-items.reverse{
-	flex-direction: row-reverse;
+.hb-hero::after{
+	content: "";
+	position: absolute;
+	right: -60px;
+	top: -80px;
+	width: 220px;
+	height: 220px;
+	background: radial-gradient(circle, rgba(245, 211, 125, 0.55), rgba(245, 211, 125, 0));
 }
-.hb-image{
-	flex: 1;
-	padding: 20px;
+.hb-eyebrow{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--brand);
+	margin-bottom: 12px;
 }
-.description{
-	flex: 1;
-	padding: 20px;
+.hb-hero-content h1{
+	font-size: 42px;
+	color: var(--hb-ink);
+	margin-bottom: 12px;
 }
-.description h2{
-	font-size: 25px;
-	margin-bottom: 20px;
+.hb-sub{
+	font-size: 18px;
+	line-height: 1.7;
+	color: #2c3953;
+	margin-bottom: 22px;
+	max-width: 520px;
 }
-.description p{
+.hb-cta{
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.hb-btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--brand);
+	color: #fff;
+	padding: 12px 24px;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 700;
+	box-shadow: 0 10px 20px rgba(18, 97, 181, 0.25);
+}
+.hb-btn:hover{
+	background: #0f4f92;
+}
+.hb-link{
+	color: var(--brand);
+	text-decoration: none;
+	font-weight: 600;
+}
+.hb-hero-media{
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.hb-hero-media img{
+	width: 100%;
+	max-width: 440px;
+	height: 320px;
+	object-fit: cover;
+	border-radius: 16px;
+	box-shadow: var(--hb-shadow);
+}
+.hb-badge{
+	position: absolute;
+	bottom: -12px;
+	left: 16px;
+	background: #fff;
+	padding: 10px 16px;
+	border-radius: 12px;
+	box-shadow: 0 12px 24px rgba(12, 20, 39, 0.16);
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	font-size: 12px;
+	color: #3d4b66;
+}
+.hb-badge strong{
 	font-size: 15px;
-	color: #000;
-	line-height: 1.5;
+	color: var(--hb-ink);
+}
+.hb-metrics{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 16px;
+	margin: 0 10px 26px;
+	padding: 10px 24px 26px;
+}
+.hb-metric{
+	background: var(--hb-ice);
+	border-radius: 16px;
+	padding: 18px;
+	border: 1px solid rgba(12, 20, 39, 0.08);
+}
+.hb-metric p{
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1.2px;
+	color: #6b7a98;
+	margin-bottom: 8px;
+}
+.hb-metric h3{
+	font-size: 20px;
+	color: var(--hb-ink);
+	margin-bottom: 6px;
+}
+.hb-metric span{
+	font-size: 14px;
+	color: #3e4b66;
+}
+.hb-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 18px;
+	padding: 10px 24px 30px;
+	margin: 0 10px 20px;
+}
+.hb-card{
+	background: #fff;
+	border-radius: 18px;
+	padding: 16px;
+	box-shadow: var(--hb-shadow);
+	border: 1px solid rgba(18, 97, 181, 0.08);
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.hb-card img{
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 12px;
+}
+.hb-card h2{
+	font-size: 22px;
+	color: var(--hb-ink);
+}
+.hb-card p{
+	font-size: 15px;
+	color: #2d3a55;
+	line-height: 1.6;
+}
+.hb-banner{
+	margin: 0 10px 30px;
+	padding: 22px 26px;
+	border-radius: 20px;
+	background: linear-gradient(120deg, #0f4f92, #1b6bd1);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 18px;
+	flex-wrap: wrap;
+}
+.hb-banner-text h2{
+	font-size: 26px;
+	margin-bottom: 6px;
+}
+.hb-banner-text p{
+	font-size: 16px;
+	max-width: 520px;
+}
+.hb-btn-light{
+	background: #fff;
+	color: #0f4f92;
+	box-shadow: none;
+}
+.hb-btn-light:hover{
+	background: #e9f1ff;
 }
 /*																										Health Benefits Page end 												*/
 
@@ -794,7 +937,7 @@ textarea {
 	letter-spacing: 0.5px;
 }
 .basket h2, .basket-products h2{
-	font-family: tahoma, sans-serif;
+	font-family: inherit;
 }
 .basket-products img{
 	width: 120px;
@@ -876,7 +1019,7 @@ textarea {
 }
 .total h2{
 	font-size: 20px;
-	font-family: tahoma;
+	font-family: inherit;
 	margin-bottom: 10px;
 }
 .btn-checkout{
@@ -1089,6 +1232,25 @@ footer{
  	.header-button{
 			margin: 10px;
  	}
+	.hb-hero{
+		padding: 24px 18px;
+	}
+	.hb-hero-content h1{
+		font-size: 32px;
+	}
+	.hb-sub{
+		font-size: 16px;
+	}
+	.hb-hero-media img{
+		height: 240px;
+	}
+	.hb-badge{
+		position: static;
+		margin-top: 10px;
+	}
+	.hb-banner{
+		padding: 20px;
+	}
 	.section2, .healthbenefits-container {
 		flex-direction: column;
 		text-align: center;
